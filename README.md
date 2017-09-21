@@ -3,7 +3,7 @@
 Backend for verification of Time based OTP (one Time Password) generated on the mobile phone for enforcing 2FA access control to the VS Shop mobile app. Also implemented as a plugin for reuse across the 3 verticals.
 
 
-<b>ENABLE A USER</b>b>
+<b>ENABLE A USER</b>
 
 
 ```
@@ -13,13 +13,13 @@ Backend for verification of Time based OTP (one Time Password) generated on the 
 ```
 
 
-Endpoint: otpapi/enableOtp
+Endpoint: otpapi/enableOtp<br />
 Method: POST
 
 
 
 
-<b>DISABLE A USER</b>b>
+<b>DISABLE A USER</b>
 
 
 ```
@@ -29,11 +29,11 @@ Method: POST
 ```
 
 
-Endpoint: otpapi/disableTotp
+Endpoint: otpapi/disableTotp<br />
 Method: DELETE
 
 
-<b>GET A USER TOTP</b>b>
+<b>GET A USER TOTP</b>
 
 
 ```
@@ -43,11 +43,11 @@ Method: DELETE
 ```
 
 
-Endpoint: otpapi/getTotp
+Endpoint: otpapi/getTotp<br />
 Method: POST
 
 
-<b>VERIFY A USER TOTP</b>b>
+<b>VERIFY A USER TOTP</b>
 
 
 ```
@@ -58,6 +58,6 @@ Method: POST
 ```
 
 
-Endpoint: otpapi/verifyOtp
+Endpoint: otpapi/verifyOtp <br />
 Method: POST
 
