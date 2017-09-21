@@ -1,0 +1,28 @@
+{
+  "name": "twofactorauth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "DASER DAVID",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.18.1",
+    "clarify": "^2.0.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "helmet": "^3.8.1",
+    "hpp": "^0.2.2",
+    "http": "0.0.0",
+    "lodash": "^4.17.4",
+    "log4js": "^2.3.3",
+    "mongoose": "^4.11.12",
+    "morgan": "^1.8.2",
+    "nocache": "^2.0.0",
+    "speakeasy": "^2.0.0"
+  }
+}
