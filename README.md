@@ -1,11 +1,8 @@
 # 2FABackend
 
-Backend for verification of Time based OTP (one Time Password) generated on the mobile phone for enforcing 2FA access control to the VS Shop mobile app. Also implemented as a plugin for reuse across the 3 verticals.
-
 WHAT: This project is a microservice that manages TOTP for two factor authentication.
 
-WHY: A standalone microservice which can be independently scaled to support twa factore authentication on user management
-needs for a larger application.
+WHY: A standalone microservice which can be independently scaled to support two factor authentication (2FA) access control on any user management needs for a larger application.
 
 HOW: The microservice exposes 4 endpoints which provide access to the data it manages. These
 endpoints are RESTful and allow CRUD operations to be performed against the underlying data
