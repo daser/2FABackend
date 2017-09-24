@@ -14,7 +14,7 @@ if(process.env.NODE_ENV == 'development' || process.env.NODE_ENV == 'test') {
 const
       express = require('express'),
       helmet = require('helmet'),
-      nextocache = require('nocache'),
+      nocache = require('nocache'),
       hpp = require('hpp'),
       bParser = require('body-parser'),
       mongoose = require('mongoose'),
@@ -89,12 +89,12 @@ if(env != 'production') {
     require('clarify');
     app.use(require('morgan')('dev'));
 }
-// app.use(helmet());
-// app.use(nocache());
+app.use(helmet());
+app.use(nocache());
 app.use(log4js.connectLogger(log, { level: 'auto' }));
 app.use(bParser.json());
 app.use(bParser.urlencoded({extended: true}));
-//app.use(hpp());
+app.use(hpp());
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
