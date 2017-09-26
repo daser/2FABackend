@@ -52,8 +52,6 @@ exports.getUserSecret = (UserID)=>{
      return UserOtp.find({"userid":UserID})
         .exec()
         .then(result => {
-            // if (!_.isEmpty(result)) {
-                console.log("secret " + result);
                 return result;
         })
         .catch(err => {

@@ -120,7 +120,7 @@ app.get('/test', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    return res.status(200).json('Welcome to the User Management Microservice');
+    return res.status(200).json('Welcome to the 2FA Backend');
 });
 
 app.use('/otpapi', routes);
